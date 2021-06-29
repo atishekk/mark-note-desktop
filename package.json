@@ -1,0 +1,46 @@
+{
+  "name": "mark-note-desktop",
+  "version": "1.0.0",
+  "description": "A markdown notes sharing platform",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "electron src/index.js",
+    "start": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "productName": "MarkNote",
+    "appId": "org.MarkNote",
+    "buildVersion": "1.0.0",
+    "dmg": {},
+    "win": {},
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "snap",
+        "AppImage"
+      ]
+    },
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    }},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atishekk/mark-note-desktop.git"
+  },
+  "author": "Atishek <atishekkumar19@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atishekk/mark-note-desktop/issues"
+  },
+  "homepage": "https://github.com/atishekk/mark-note-desktop#readme",
+  "devDependencies": {
+    "electron": "^13.1.4",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "electron-util": "^0.16.0"
+  }
+}
